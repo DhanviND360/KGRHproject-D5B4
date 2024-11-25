@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overthinking Classes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            padding: 30px;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px #333;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px auto;
+            max-width: 90%;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #feb47b;
+            color: black;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery div {
+            margin: 15px;
+            text-align: center;
+            max-width: 250px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #feb47b;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .gallery p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .glowing-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: glow 1.5s infinite;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #ff7e5f; }
+            50% { box-shadow: 0 0 20px #feb47b; }
+            100% { box-shadow: 0 0 5px #ff7e5f; }
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .register-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Overthinking Classes</h1>
+        <p>Make and break your overthinking!</p>
+        <p> (Find the easter eggs)</p>
+    </header>
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="class-details.html">Class Details</a>
+        <a href="batch-timingss.html">Batch Timings</a>
+        <a href="fees-structure.html">Fees Structure</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <section class="gallery">
+        <div>
+            <img src="thinkfire.png" alt="Overthinking">
+            <p>Learn the art of overthinking.</p>
+        </div>
+        <div>
+            <img src="thinkingstat.png" alt="Overthinkers">
+            <p>Train with professional overthinkers.</p>
+            
+        </div>
+        <div>
+            <img src="thinkingwtf.jpg" alt="Overthink-ability">
+            <p>Build discipline and confidence to make or break the habit.</p>
+        </div>
+    </section>
+    <footer>
+        <a href="free-class.html" class="glowing-button">Click Here for 1 Month Free Class</a>
+        <a href="register.html" class="register-button">Register Now</a>
+    </footer>
+</body>
+</html>

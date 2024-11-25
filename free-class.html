@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Class Test</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #f9f9f9; padding: 20px;">
+    <h1>Test Your Interest</h1>
+    <form>
+        <p>1. Do you like this webpage?</p>
+        <input type="text" id="answer" placeholder="Type yes or no and click submit" style="padding: 10px; font-size: 16px; width: 300px;">
+        <br><br>
+        <button type="button" onclick="checkAnswer()" style="padding: 10px 20px; background-color: #28a745; color: white; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
+            Submit
+        </button>
+        <p id="response" style="margin-top: 20px; font-size: 18px;"></p>
+    </form>
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('answer').value.toLowerCase();
+            const response = document.getElementById('response');
+            if (answer === 'yes') {
+                response.textContent = 'Congratulations! You won the free 1 month trial';
+                response.style.color = 'green';
+            } else if (answer === 'no') {
+                response.textContent = 'You are overthinking. Immediately register yourself.';
+                response.style.color = 'red';
+            } else {
+                response.textContent = 'Please answer with "yes" or "no".';
+                response.style.color = 'orange';
+            }
+        }
+    </script>
+     <footer>
+        <a href="Overthink.html">Back to Home</a>
+    </footer>
+</body>
+</html>
