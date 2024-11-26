@@ -109,6 +109,21 @@
         .register-button:hover {
             background-color: #218838;
         }
+        .moving-text {
+            margin-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .moving-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body>
@@ -117,6 +132,9 @@
         <p>Make and break your overthinking!</p>
         <p> (Find the easter eggs)</p>
     </header>
+    <div class="moving-text">
+        <span>Classes begin from December 1st 2024!! Apply quickly!! Limited seats </span>
+    </div>
     <nav>
         <a href="about.html">About Us</a>
         <a href="class-details.html">Class Details</a>
@@ -143,5 +161,8 @@
         <a href="free-class.html" class="glowing-button">Click Here for 1 Month Free Class</a>
         <a href="register.html" class="register-button">Register Now</a>
     </footer>
+    <div class="moving-text">
+        <span>Made by Dhanvi</span>
+    </div>
 </body>
 </html>
